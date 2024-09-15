@@ -1,0 +1,766 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1eded;
+}
+
+/* Navbar */
+nav {
+    height: 110px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 0.9;
+    justify-content: space-between;
+}
+
+#logo {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin: 30px;
+}
+
+#logo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav ul {
+    display: flex;
+    height: 110px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.list-items {
+    list-style: none;
+    margin: 49px;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    height: 50px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+}
+
+.list-items a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-items:hover {
+    background-color: white;
+
+    a {
+        color: black;
+    }
+}
+
+/* Main-Section One */
+#main {
+    display: flex;
+    height: 500px;
+    margin: 20px 10px;
+    padding: 20px 20px;
+}
+
+#left {
+    width: 200%;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+#left h3 {
+    font-size: 8rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: rgb(113, 128, 58);
+    transition: all ease-in 0.4s;
+}
+
+#left h3:hover {
+    color: rgb(123, 147, 38);
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#image-container {
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 250px;
+    overflow: hidden;
+}
+
+#image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+#image-container img:hover {
+    transform: scale(1.3);
+}
+
+#para-container p {
+    text-align: justify;
+    margin: 20px;
+    font-size: 0.9rem;
+}
+
+/* Section Two Container */
+#second-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid rgb(11, 11, 11);
+    margin-top: 30px;
+}
+
+#sweet-images {
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    flex: 1;
+    margin-top: 40px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sweets {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.sweets img {
+    height: 300px;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.sweets img:hover {
+    transform: scale(1.02);
+}
+
+#sc-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    margin-top: 30px;
+}
+
+#sc-bottom h3 {
+    font-size: 3rem;
+    background: linear-gradient(to right, red, orange, orangered, red);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: all 0.6s ease-in-out;
+}
+
+#sc-bottom h3:hover {
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8),
+        0 0 12px rgba(255, 165, 0, 0.8),
+        0 0 16px rgba(255, 69, 0, 0.8);
+    color: white;
+}
+
+/* section-three */
+#three {
+    height: 520px;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+#review-container {
+    height: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-box {
+    display: flex;
+    justify-content: space-between;
+    height: 235px;
+    width: 100%;
+    margin: 7px 0px;
+}
+
+.reviews {
+    border: 2px solid #0d0d0d;
+    height: 200px;
+    width: 720px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: #d9e0da;
+}
+
+.reviews p {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.reviews h3 {
+    margin: 30px 10px;
+    font-size: 1.7rem;
+}
+
+/* footer section */
+footer {
+    background-color: #e0d7d7;
+    color: black;
+    height: 55%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+}
+
+#footer-container {
+    height: 90%;
+    width: 89%;
+}
+
+#footer-part1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+#footer-part1 div {
+    margin-inline: 78px;
+
+    h2 {
+        font-size: 2.2rem;
+        color: rgb(113, 128, 58);
+    }
+
+    h2:hover {
+        color: rgb(123, 147, 38);
+    }
+}
+
+#flogo {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin: 0px 40px;
+}
+
+#flogo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#footer-part2 {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+}
+
+#footer-part2 div {
+    margin: 20px 70px;
+    font-size: 1.2rem;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-part2 div ul li {
+    margin: 6.8px 0px;
+    list-style: none;
+}
+
+.fp2-title a {
+    font-size: 1.5rem;
+    margin: 7px 0px !important;
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+#footer-part2 div ul li a {
+    color: rgba(0, 0, 0, 0.6);
+    transition: all ease 0.4s;
+}
+
+#footer-part2 div ul li a:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#footer-part2 li a {
+    text-decoration: none;
+}
+
+#footer-part3 {
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+/* Loader */
+#loader {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    transition: all ease 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader h1 {
+    font-size: 5rem;
+    color: transparent;
+    background: linear-gradient(to right, red, orangered, red);
+    position: relative;
+    border-radius: 1.8rem;
+    -webkit-background-clip: text;
+    animation: fill 3s linear forwards;
+}
+
+@keyframes fill {
+    100% {
+        color: rgb(113, 128, 58);
+    }
+}
+
+/* Responsive */
+@media (max-width:1230px) and (min-width:1100px) {
+    #footer-part2 {
+        height: 245px;
+    }
+
+    #footer-part2 div {
+        margin: 20px 50px;
+    }
+
+    .reviews {
+        height: 214px;
+    }
+
+    #image-container {
+        margin-left: 154px;
+    }
+
+    #left h3 {
+        font-size: 6.5rem;
+    }
+    footer{
+        height: 70%;
+    }
+}
+
+@media (max-width:1099px) and (min-width:900px) {
+    .list-items {
+        margin: 34px;
+    }
+
+    #left h3 {
+        font-size: 6rem;
+        margin-bottom: 125px;
+        margin-left: 0px;
+    }
+
+    #image-container {
+        margin-left: 7.5rem;
+    }
+
+    #sweet-images {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        margin-left: 48px;
+    }
+
+    #sc-bottom h3 {
+        font-size: 2.5rem;
+    }
+
+    .reviews {
+        border: 2px solid #0d0d0d;
+        height: 238px;
+    }
+
+    footer {
+        height: 70%;
+    }
+
+    #footer-container {
+        height: 95%;
+    }
+
+    #footer-part2 {
+        height: 276px;
+    }
+
+    #footer-part2 div {
+        margin: 20px 26px;
+        width: 375px;
+    }
+}
+
+@media (max-width:899px) and (min-width:690px) {
+    .list-items {
+        margin: 22px;
+    }
+    #main {
+        flex-direction: column;
+        height: 570px;
+    }
+    #left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #left h3 {
+        font-size: 5rem;
+        margin-bottom: 0px;
+    }
+    #right {
+        display: flex;
+        align-items: center;
+    }
+    #image-container {
+        height: 235px;
+        width: 340px;
+        margin-top: 41px;
+        margin-left: 0px;
+    }
+    #sweet-images {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 22px;
+    }
+    #sc-bottom {
+        height: 20px;
+    }
+    #sc-bottom h3{
+        font-size: 2.1rem;
+    }
+    #three {
+        height: 830px;
+    }
+    .review-box {
+        flex-direction: column;
+        height: 400px;
+        margin: 10px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .reviews {
+        width: 658px;
+    }
+    .reviews h3 {
+        margin: 21px 10px;
+    }
+    #footer-part2 div {
+        margin: 14px 40px;
+        font-size: 1rem;
+        width: 224px;
+    }
+    #flogo {
+        height: 60px;
+        width: 60px;
+    }
+    #footer-part1 div h2 {
+        font-size: 2rem;
+    }
+    footer{
+        height: 57%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fp2-title a {
+        font-size: 1.1rem;
+    }
+    #footer-part2 div {
+        margin: 14px 26px;
+        font-size: 0.8rem;
+    }
+    #footer-part3{
+        font-size: 0.9rem;
+        height: 21px;
+    }
+    #loader h1{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:690px) and (min-width:496px) {
+    nav{
+        overflow-y: hidden;
+        height: 90px;
+    }
+    #logo{
+        height: 55px;
+        width: 55px;
+    }
+    .list-items {
+        margin: 1px;
+        font-size: 0.9rem;
+    }
+    #main {
+        flex-direction: column;
+        height: 540px;
+    }
+    #left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #left h3 {
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+    #right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #image-container {
+        height: 195px;
+        width: 283px;
+        margin-top: 41px;
+        margin-left: 0px;
+    }
+    #sweet-images {
+        grid-template-columns: repeat(1, 0.95fr);
+        width: 90%;
+    }
+    #sc-bottom {
+        height: 20px;
+    }
+    #sc-bottom h3{
+        font-size: 1.4rem;
+    }
+    #three {
+        height: 700px;
+    }
+    .review-box {
+        flex-direction: column;
+        height: 400px;
+        margin: 5px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .reviews {
+        width: 473px;
+        height: 150px;
+    }
+    .reviews h3 {
+        margin: 21px 10px;
+        font-size: 1.2rem;
+    }
+    .reviews p {
+        font-size: 1rem;
+    }
+    #footer-part2 div {
+        margin: 14px 40px;
+        font-size: 1rem;
+        width: 224px;
+    }
+    #flogo {
+        height: 54px;
+        width: 54px;
+    }
+    #footer-part1 div h2 {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+    #footer-part1 div{
+        margin-inline: 50px;
+    }
+    footer{
+        height: 59%;
+    }
+    .fp2-title a {
+        font-size: 1rem;
+    }
+    #footer-part2 {
+        height: 176px;
+    }
+    #footer-part2 div {
+        margin: 14px 10px;
+        font-size: 0.7rem;
+    }
+    #footer-part3{
+        font-size: 0.7rem;
+        height: 21px;
+    }
+    #loader h1{
+        font-size: 3.5rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width:495px) and (min-width:300px) {
+    nav{
+        overflow-y: hidden;
+        height: 120px;
+        flex-direction: column;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+        margin: 10px 0px;
+    }
+    .list-items {
+        margin: 0px;
+        font-size: 0.7rem;
+    }
+    #main {
+        flex-direction: column;
+        height: 540px;
+    }
+    #left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #left h3 {
+        font-size: 2.2rem;
+        margin-bottom: 0px;
+        white-space: nowrap;
+    }
+    #right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #para-container p{
+        width: 92vw;
+        margin: 15px 0px;
+        font-size: 0.86rem;
+    }
+    #image-container {
+        height: 150px;
+        width: 220px;
+        margin-top: 41px;
+        margin-left: 0px;
+    }
+    #sweet-images {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 18px;
+    }
+    #sc-bottom {
+        height: 20px;
+    }
+    #sc-bottom h3{
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+    #three {
+        height: 850px;
+    }
+    .review-box {
+        flex-direction: column;
+        height: 400px;
+        margin: 5px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .reviews {
+        width: 280px;
+        height: 187px;
+    }
+    .reviews h3 {
+        margin: 21px 10px;
+        font-size: 1rem;
+    }
+    .reviews p {
+        font-size: 0.8rem;
+    }
+    #footer-part2 div {
+        margin: 14px 40px;
+        font-size: 0.8rem;
+        width: 224px;
+    }
+    #flogo {
+        height: 50px;
+        width: 50px;
+    }
+    #footer-part1 div h2 {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+    #footer-part1 div{
+        margin-inline: 0px;
+    }
+    footer{
+        height: 50%;
+    }
+    .fp2-title a {
+        font-size: 0.8rem;
+    }
+    #footer-part2 {
+        height: 158px;
+    }
+    #footer-part2 div {
+        margin: 14px 6px;
+        font-size: 0.5rem;
+    }
+    #footer-part3{
+        font-size: 0.5rem;
+        height: 21px;
+    }
+    #loader h1{
+        font-size: 2.1rem;
+        white-space: nowrap;
+    }
+}
